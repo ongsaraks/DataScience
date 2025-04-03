@@ -1,0 +1,5 @@
+Processed Data:
+Alice,25,New York
+Bob,30,London
+Charlie,22,Paris
+David,28,Tokyo

@@ -1,0 +1,2 @@
+print('Run as:')
+print(' streamlit run app.py')

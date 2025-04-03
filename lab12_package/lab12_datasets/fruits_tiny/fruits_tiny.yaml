@@ -1,0 +1,8 @@
+path: C:\Users\gifly\Desktop\DataScience\lab12_package\lab12_datasets\fruits_tiny #Path to datasets. CANNOT CONTAIN WHITESPACES!
+train: # path to training images
+val: val/images # path to validation images
+test: # path to test images
+
+# Classes
+nc: 3  # Number of classes
+names: ['apple', 'banana', 'orange']  # Class names
