@@ -4,7 +4,7 @@ model: yolov8n.pt
 data: C:\Users\gifly\Desktop\DataScience\Project\Product_Classification\data.yaml
 epochs: 50
 time: null
-patience: 100
+patience: 5
 batch: 16
 imgsz: 640
 save: true
