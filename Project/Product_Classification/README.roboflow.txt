@@ -1,8 +1,8 @@
 
-Product_Classification - v1 2025-04-03 3:25pm
+Product_Classification - v2 2025-04-15 10:34am
 ==============================
 
-This dataset was exported via roboflow.com on April 3, 2025 at 8:25 AM GMT
+This dataset was exported via roboflow.com on April 15, 2025 at 3:36 AM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,15 +17,18 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 600 images.
+The dataset includes 859 images.
 Dryer-IRON are annotated in YOLOv8 format.
 
 The following pre-processing was applied to each image:
 * Auto-orientation of pixel data (with EXIF-orientation stripping)
-* Resize to 640x640 (Stretch)
-* Grayscale (CRT phosphor)
 
-The following augmentation was applied to create 2 versions of each source image:
-* Equal probability of one of the following 90-degree rotations: none, clockwise, counter-clockwise, upside-down
+The following augmentation was applied to create 3 versions of each source image:
+* 50% probability of horizontal flip
+* 50% probability of vertical flip
+* Salt and pepper noise was applied to 0.61 percent of pixels
+
+The following transformations were applied to the bounding boxes of each image:
+* 50% probability of horizontal flip
 
 
