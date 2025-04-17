@@ -1,0 +1,13 @@
+names:
+- SOBO_WP_4200
+- YAMANO_LPP_20
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: noocr
+  url: https://universe.roboflow.com/ongsa-23tub/noocr/dataset/2
+  version: 2
+  workspace: ongsa-23tub
+test: ../test/images
+train: ../train/images
+val: ../valid/images
