@@ -196,40 +196,40 @@ if os.path.exists('object_counts.csv'):
             mime='text/csv'
         )
 
-# Add manual adjustment buttons in the sidebar
-st.sidebar.title("Adjust Counts Manually")
+# # Add manual adjustment buttons in the sidebar
+# st.sidebar.title("Adjust Counts Manually")
 
-# Function to adjust counts
-def adjust_count(object_name, adjustment):
+# # Function to adjust counts
+# def adjust_count(object_name, adjustment):
 
-    # Check if the CSV file exists
+#     # Check if the CSV file exists
 
-    df = pd.read_csv('object_counts.csv')
+#     df = pd.read_csv('object_counts.csv')
 
-        # Update the count for the specific object
-    if object_name in df['Object'].values:
-        df.loc[df['Object'] == object_name, 'NUM'] += adjustment
+#         # Update the count for the specific object
+#     if object_name in df['Object'].values:
+#         df.loc[df['Object'] == object_name, 'NUM'] += adjustment
 
 
-    # Save the updated DataFrame back to the CSV file
-    df.to_csv('object_counts.csv', index=False)
+#     # Save the updated DataFrame back to the CSV file
+#     df.to_csv('object_counts.csv', index=False)
 
-# Manual adjustment for SOBO_WP_4200
-st.sidebar.subheader("SOBO_WP_4200")
-col1, col2 = st.sidebar.columns(2)
-with col1:
-    if st.sidebar.button("➕ Increase SOBO_WP_4200", key="increase_SOBO"):
-        adjust_count("SOBO_WP_4200", 1)
-with col2:
-    if st.sidebar.button("➖ Decrease SOBO_WP_4200", key="decrease_SOBO"):
-        adjust_count("SOBO_WP_4200", -1)
+# # Manual adjustment for SOBO_WP_4200
+# st.sidebar.subheader("SOBO_WP_4200")
+# col1, col2 = st.sidebar.columns(2)
+# with col1:
+#     if st.sidebar.button("➕ Increase SOBO_WP_4200", key="increase_SOBO"):
+#         adjust_count("SOBO_WP_4200", 1)
+# with col2:
+#     if st.sidebar.button("➖ Decrease SOBO_WP_4200", key="decrease_SOBO"):
+#         adjust_count("SOBO_WP_4200", -1)
 
-# Manual adjustment for YAMANO_LPP_20
-st.sidebar.subheader("YAMANO_LPP_20")
-col3, col4 = st.sidebar.columns(2)
-with col3:
-    if st.sidebar.button("➕ Increase YAMANO_LPP_20", key="increase_YAMANO"):
-        adjust_count("YAMANO_LPP_20", 1)
-with col4:
-    if st.sidebar.button("➖ Decrease YAMANO_LPP_20", key="decrease_YAMANO"):
-        adjust_count("YAMANO_LPP_20", -1)
+# # Manual adjustment for YAMANO_LPP_20
+# st.sidebar.subheader("YAMANO_LPP_20")
+# col3, col4 = st.sidebar.columns(2)
+# with col3:
+#     if st.sidebar.button("➕ Increase YAMANO_LPP_20", key="increase_YAMANO"):
+#         adjust_count("YAMANO_LPP_20", 1)
+# with col4:
+#     if st.sidebar.button("➖ Decrease YAMANO_LPP_20", key="decrease_YAMANO"):
+#         adjust_count("YAMANO_LPP_20", -1)
