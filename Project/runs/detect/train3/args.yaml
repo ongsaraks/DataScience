@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: C:\Users\gifly\Desktop\DataScience\Project\Product_Classification\data.yaml
+data: C:\Users\gifly\Desktop\DataScience\Project\NoOCR-3\data.yaml
 epochs: 50
 time: null
 patience: 5
